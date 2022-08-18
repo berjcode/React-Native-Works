@@ -23,15 +23,19 @@ const styles = StyleSheet.create({
         
         height:80,
         paddingTop:38,
-        backgroundColor: 'blue'
+        backgroundColor: 'yellow'
     },
 
     title:{
 
-        color: 'black',
+        color: 'white',
         fontSize: 34,
         textAlign: 'center',
         fontWeight: 'bold',
+        backgroundColor: 'black',
+        
+        
+        
 
     },
 
