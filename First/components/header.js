@@ -6,9 +6,12 @@ export default function Header(){
     return(
 
     <View style ={ styles.header}>
+        
         <Text style={styles.title}>
+        
             My Note
         </Text>
+        
     </View>
 
 
@@ -20,10 +23,10 @@ export default function Header(){
 const styles = StyleSheet.create({
 
     header: {
-        
+    
         height:80,
         paddingTop:38,
-        backgroundColor: 'white'
+        backgroundColor: '#050100',
     },
 
     title:{
@@ -32,7 +35,9 @@ const styles = StyleSheet.create({
         fontSize: 34,
         textAlign: 'center',
         fontWeight: 'bold',
-        backgroundColor: 'white',
+       backgroundColor:"white"
+        
+       
         
         
         

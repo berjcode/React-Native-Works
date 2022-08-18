@@ -3,6 +3,7 @@ import { StyleSheet, Text, View,FlatList,Alert,TouchableWithoutFeedback, Keyboar
 import Header from './components/header';
 import ToDoItem from "./components/todoItem";
 import AddToDo from "./components/addToDo";
+import SandBox from "./components/sandbox";
 
 
 export default function App(){
@@ -84,12 +85,17 @@ const styles = StyleSheet.create({
 
   content: {
     padding:40,
+    backgroundColor: 'white',
+    flex:1,
     
 
   },
 
   list: {
       marginTop:30,
+      backgroundColor:'white',
+      
+      
   },
 
 

@@ -1,5 +1,8 @@
 import React,{useState} from "react";
-import { StyleSheet, Text,TouchableOpacity } from "react-native";
+import { StyleSheet, Text,TouchableOpacity ,View} from "react-native";
+
+
+
 
 
 export default function ToDoItem({item,pressHandler}){
@@ -7,7 +10,14 @@ export default function ToDoItem({item,pressHandler}){
     return(
 
             <TouchableOpacity onPress={()=> pressHandler(item.key)}>
-                <Text style={ styles.item}>{item.text}</Text>
+                
+                <View>
+                
+                    <Text style={ styles.item}>{item.text}  </Text>
+                    <Text style={styles.delete}>Delete</Text>
+               
+                
+                </View>
 
             </TouchableOpacity>
 
@@ -19,12 +29,19 @@ export default function ToDoItem({item,pressHandler}){
 const styles=StyleSheet.create({
 
     item: {
-        padding:20,
-        marginTop:16,
-        borderColor:'red',
-        borderWidth:1,
-        borderStyle:'dashed',
-        borderRadius:10,
+        padding:16,
+        marginTop:15,
+        borderColor:'black',
+       // borderWidth:1,
+       // borderStyle:'dashed',
+       // borderRadius:15,
         color: 'black',
     },
+    delete:{
+        color: "black",
+        padding:2,
+        borderWidth:1,
+        borderColor:'black',
+        textAlign:'center',
+    }
 })
