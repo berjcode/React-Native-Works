@@ -19,11 +19,12 @@ export default function ToDoItem({item,pressHandler}){
 const styles=StyleSheet.create({
 
     item: {
-        padding:16,
+        padding:20,
         marginTop:16,
-        borderColor:'#bbb',
+        borderColor:'red',
         borderWidth:1,
         borderStyle:'dashed',
         borderRadius:10,
+        color: 'black',
     },
 })
