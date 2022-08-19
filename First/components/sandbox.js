@@ -7,3 +7,7 @@ export default function SandBox(){
         <Text>SandBox</Text>
     );
 }
+
+const styles = StyleSheet.create({
+
+});
